@@ -1,21 +1,23 @@
-@import "fonts";
+// composition
+@import "Composition related styles/_fonts";
+@import "Composition related styles/_typography";
+@import "Composition related styles/_theme"; // Assuming Logomark is global
 
-// You can modify the theme directly, or override some of the variables
-// Overrides just need placed prior to the theme import
-// For example:
-// $color-primary: #3a0;
-@import "theme";
-@import "reset";
-@import "logomark";
-@import "typography";
-@import "layout";
-@import "header";
-@import "nav";
-@import "about";
-@import "guidelines";
-@import "contribute";
-@import "files";
-@import "styles";
-@import "profile";
-@import "footer";
-@import "links";
+// Global CSS (e.g., reset and general styles)
+@import "Global CSS/reset"; // Corrected path for reset.scss
+@import "Global CSS/logomark"; // Assuming contribute is part of global styles
+
+// Utility styles (utility folder)
+@import "Utility styles/_guidelines"; // Assuming guidelines fall under utility
+@import "Utility styles/_files"; // Corrected path for files.scss
+@import "Utility styles/_Profile"; // Profile under utility styles
+
+// Block-related styles (block folder)
+@import "Block related styles/_layout"; // Updated path for layout
+@import "Block related styles/_header"; // Updated path for header
+@import "Block related styles/_nav"; // Updated path for nav
+@import "Block related styles/_links"; // 
+@import "Block related styles/_styles"; // Assuming styles are block-related
+@import "Block related styles/_footer"; // Footer as a block-related style
+@import "Block related styles/_about"; // Footer as a block-related style
+@import "Block related styles/_contribute"; // Contribute section in composition
